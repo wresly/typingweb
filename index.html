@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Latihan Mengetik</title>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Latihan Mengetik 10 Jari</h1>
+        <div class="main">
+            <button type="button" onclick="showForm()" class="btn">Custom</button>
+            <div class="textBox">
+                <div id="texts" class="texts"></div>
+            </div>
+
+            <div class="row">
+                <input type="text" name="" id="textinput" placeholder="type here">
+                <button type="button" id="timer" title="timer" onclick="reload()">
+                    01:00
+                </button>
+                <button type="button" id="refreshBTN" title="refresh" onclick="reload()">
+                    <img src="img/refresh.png" alt="">
+                </button>
+            </div>
+
+            <div class="cloneTextBox">
+                <div id="cloneTexts" class="texts"></div>
+            </div>
+
+            <div class="cardResult">
+                <img src="img/typing.png" alt="testsdsdfsdf">
+                <div class="row">
+                    <h3 id="WPM">0 WPM</h3>
+                    <div class="charCount">
+                        (<span id="charCorrect"></span>/<span id="charWrong"></span>)
+                    </div>
+                </div>
+                <div class="row">
+                    <span>Accuracy</span> <span id="acc"></span>
+                </div>
+                <div class="row">
+                    <span>Correct Words</span> <span id="cWord"></span>
+                </div>
+                <div class="row">
+                    <span>Wrong Words</span> <span id="wWord"></span>
+                </div>
+                <button type="button" class="btn">Share</button>
+            </div>
+        </div>
+
+        <div id="customForm" class="customForm">
+            <div class="form">
+                <h2>Input Text</h2>
+                <textarea name="" id="customText" cols="30" rows="10" placeholder="input here"></textarea>
+                <div class="row">
+                    <button class="btn btnCancel" onclick="closeForm()" type="button">Cancel</button>
+                    <button class="btn btnChange" onclick="changeCustomText()" type="button">Change</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
